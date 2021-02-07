@@ -1,9 +1,18 @@
 </!DOCTYPE html>
-<html>
-<head>
-	<title>Hello Angular</title>
-</head>
-<body>
-<h1>Start leaning Angular by coursera. It's nice experience.</h1>
-</body>
+<html ng-app="myFirstApp">
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<title>My first Angular App.</title>
+	</head>
+	<body>
+		<h1>My First AngularJs App</h1>
+		<div ng-controller="MyFirstController">
+			{{sayHello()}}
+			<input type="text" ng-model="name">
+			Inside my input field: {{name}}
+			
+		</div>
+	</body>
 </html>
